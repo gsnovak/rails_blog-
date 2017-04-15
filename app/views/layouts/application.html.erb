@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graham's Crackin' Blog</title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!-- Render navigation bar -->
+  <%= render "layouts/navigation" %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
+
+</body>
+</html>
